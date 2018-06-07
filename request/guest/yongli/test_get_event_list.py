@@ -14,7 +14,7 @@ class GetEventListTest(unittest.TestCase):
         self.base_url = "http://127.0.0.1:8000/api/get_event_list/"
 
     def tearDown(self):
-        print(self.result)
+        print(self.result) #每种情况的打印
 
     def test_get_event_list_eid_error(self):
         ''' eid=901 查询结果为空 '''
@@ -47,6 +47,7 @@ class GetEventListTest(unittest.TestCase):
         self.assertEqual(self.result['message'], 'success')
         self.assertEqual(self.result['data'][0]['name'],u'红米Pro发布会')
         self.assertEqual(self.result['data'][0]['address'],u'北京会展中心')
+        print(self.result) #模糊搜索后的数据打印
 
 
 if __name__ == '__main__':

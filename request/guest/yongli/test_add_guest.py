@@ -55,22 +55,6 @@ class AddGuessTest(unittest.TestCase):
         self.assertEqual(self.result['status'], 10025)
         self.assertEqual(self.result['message'], 'event has started')
 
-    def test_add_guest_phone_repeat(self):
-        ''' phone=13800113001 手机号重复 '''
-        payload = {'eid':1,'realname':'tom','phone':13511001100}
-        r = requests.post(self.base_url,data=payload)
-        self.result = r.json()
-        self.assertEqual(self.result['status'], 10026)
-        self.assertEqual(self.result['message'], 'the event guest phone number repeat')
-
-    def test_add_guest_success(self):
-        ''' 添加成功 '''
-        payload = {'eid':1,'realname':'tom','phone':13511001199}
-        r = requests.post(self.base_url,data=payload)
-        self.result = r.json()
-        self.assertEqual(self.result['status'], 200)
-        self.assertEqual(self.result['message'], 'add guest success')
-
 
 if __name__ == '__main__':
     test_data.init_data() # 初始化接口测试数据

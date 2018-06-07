@@ -17,7 +17,7 @@ class AddEventTest(unittest.TestCase):
 
     def test_add_event_all_null(self):
         ''' 所有参数为空 '''
-        payload = {'eid':'','':'','limit':'','address':"",'start_time':''}
+        payload = {'eid':'','name':'','limit':'','address':"",'start_time':''}
         r = requests.post(self.base_url, data=payload)
         self.result = r.json()
         self.assertEqual(self.result['status'], 10021)
