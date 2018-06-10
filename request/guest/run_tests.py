@@ -5,7 +5,6 @@ from HTMLTestRunner import HTMLTestRunner
 import unittest
 from db_fixture import test_data
 
-
 if __name__ == "__main__":
 	
     test_data.init_data() # 初始化接口测试数据
