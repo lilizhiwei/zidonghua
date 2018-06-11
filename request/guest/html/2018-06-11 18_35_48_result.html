@@ -2,7 +2,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Guest Manage System Interface Test Report</title>
+    <title>测试报告</title>
     <meta name="generator" content="HTMLTestRunner 0.8.2"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -190,12 +190,12 @@ function showOutput(id, name) {
 --></script>
 
 <div class='heading'>
-<h1>Guest Manage System Interface Test Report</h1>
-<p class='attribute'><strong>Start Time:</strong> 2016-10-17 22:35:54</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.689648</p>
-<p class='attribute'><strong>Status:</strong> Pass 29</p>
+<h1>测试报告</h1>
+<p class='attribute'><strong>Start Time:</strong> 2018-06-11 18:35:48</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.940000</p>
+<p class='attribute'><strong>Status:</strong> Pass 38</p>
 
-<p class='description'>Implementation Example with: </p>
+<p class='description'>用例执行情况</p>
 </div>
 
 
@@ -224,7 +224,7 @@ function showOutput(id, name) {
 </tr>
 
 <tr class='passClass'>
-    <td>add_event_test.AddEventTest:  添加发布会 </td>
+    <td>test_add_event.AddEventTest:  添加发布会 </td>
     <td>5</td>
     <td>5</td>
     <td>0</td>
@@ -358,12 +358,12 @@ pt1.5: {'status': 200, 'message': 'add event success'}
 </tr>
 
 <tr class='passClass'>
-    <td>add_guest_test.AddGuessTest:  添加嘉宾 </td>
-    <td>7</td>
-    <td>7</td>
+    <td>test_add_guest.AddGuessTest:  添加嘉宾 </td>
+    <td>5</td>
+    <td>5</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',7)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c2',5)">Detail</a></td>
 </tr>
 
 <tr id='pt2.1' class='hiddenRow'>
@@ -442,7 +442,7 @@ pt2.3: {'status': 10024, 'message': 'event number is full'}
 </tr>
 
 <tr id='pt2.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_add_guest_phone_repeat: phone=13800113001 手机号重复</div></td>
+    <td class='none'><div class='testcase'>test_add_guest_status_close: eid=2 状态未开启</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -456,7 +456,7 @@ pt2.3: {'status': 10024, 'message': 'event number is full'}
         </div>
         <pre>
         
-pt2.4: {'status': 10026, 'message': 'the event guest phone number repeat'}
+pt2.4: {'status': 10023, 'message': 'event status is not available'}
 
 
         </pre>
@@ -467,7 +467,7 @@ pt2.4: {'status': 10026, 'message': 'the event guest phone number repeat'}
 </tr>
 
 <tr id='pt2.5' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_add_guest_status_close: eid=2 状态未开启</div></td>
+    <td class='none'><div class='testcase'>test_add_guest_time_start: eid=4 发布会已开始</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -481,57 +481,7 @@ pt2.4: {'status': 10026, 'message': 'the event guest phone number repeat'}
         </div>
         <pre>
         
-pt2.5: {'status': 10023, 'message': 'event status is not available'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt2.6' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_add_guest_success: 添加成功</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.6')" >
-        pass</a>
-
-    <div id='div_pt2.6' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.6').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt2.6: {'status': 200, 'message': 'add guest success'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt2.7' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_add_guest_time_start: eid=4 发布会已开始</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.7')" >
-        pass</a>
-
-    <div id='div_pt2.7' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.7').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt2.7: {'status': 10025, 'message': 'event has started'}
+pt2.5: {'status': 10025, 'message': 'event has started'}
 
 
         </pre>
@@ -542,7 +492,7 @@ pt2.7: {'status': 10025, 'message': 'event has started'}
 </tr>
 
 <tr class='passClass'>
-    <td>get_event_list_test.GetEventListTest:  获得发布会列表 </td>
+    <td>test_auto.GetEventListTest:  查询发布会信息（带用户认证）</td>
     <td>4</td>
     <td>4</td>
     <td>0</td>
@@ -551,116 +501,36 @@ pt2.7: {'status': 10025, 'message': 'event has started'}
 </tr>
 
 <tr id='pt3.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_event_list_eid_error: eid=901 查询结果为空</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
-        pass</a>
-
-    <div id='div_pt3.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt3.1: {'status': 10022, 'message': 'query result is empty'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td class='none'><div class='testcase'>test_get_event_list_auth_error: auth 错误</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='pt3.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_event_list_eid_success: 根据 eid 查询结果成功</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.2')" >
-        pass</a>
-
-    <div id='div_pt3.2' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.2').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt3.2: {'data': {'name': '红米Pro发布会', 'limit': 2000, 'start_time': '2017-08-20T14:00:00', 'status': True, 'eid': 1, 'address': '北京会展中心'}, 'status': 200, 'message': 'success'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td class='none'><div class='testcase'>test_get_event_list_auth_null: auth 为空</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='pt3.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_event_list_nam_result_null: 关键字‘abc’查询</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.3')" >
-        pass</a>
-
-    <div id='div_pt3.3' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.3').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt3.3: {'status': 10022, 'message': 'query result is empty'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td class='none'><div class='testcase'>test_get_event_list_eid_null: eid 参数为空</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr id='pt3.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_event_list_name_find: 关键字‘发布会’模糊查询</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.4')" >
-        pass</a>
-
-    <div id='div_pt3.4' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt3.4').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt3.4: {'data': [{'name': '红米Pro发布会', 'limit': 2000, 'start_time': '2017-08-20T14:00:00', 'status': True, 'eid': 1, 'address': '北京会展中心'}, {'name': '发布会已结束', 'limit': 2000, 'start_time': '2001-08-20T14:00:00', 'status': True, 'eid': 4, 'address': '北京会展中心'}, {'name': '小米5发布会', 'limit': 2000, 'start_time': '2017-08-20T14:00:00', 'status': True, 'eid': 5, 'address': '北京国家会议中心'}, {'name': '一加4手机发布会', 'limit': 2000, 'start_time': '2017-05-10T12:00:00', 'status': True, 'eid': 11, 'address': '深圳宝体'}], 'status': 200, 'message': 'success'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
+    <td class='none'><div class='testcase'>test_get_event_list_eid_success: 根据 eid 查询结果成功</div></td>
+    <td colspan='5' align='center'>pass</td>
 </tr>
 
 <tr class='passClass'>
-    <td>get_guest_list_test.GetGuestListTest:  获得嘉宾列表 </td>
-    <td>5</td>
-    <td>5</td>
+    <td>test_get_event_list.GetEventListTest:  获得发布会列表 </td>
+    <td>4</td>
+    <td>4</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c4',5)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c4',4)">Detail</a></td>
 </tr>
 
 <tr id='pt4.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_event_list_eid_error: 根据 eid 查询结果为空</div></td>
+    <td class='none'><div class='testcase'>test_get_event_list_eid_error: eid=901 查询结果为空</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -685,7 +555,7 @@ pt4.1: {'status': 10022, 'message': 'query result is empty'}
 </tr>
 
 <tr id='pt4.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_event_list_eid_phone_null: 根据 eid 和phone 查询结果为空</div></td>
+    <td class='none'><div class='testcase'>test_get_event_list_eid_success: 根据 eid 查询结果成功</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -699,7 +569,7 @@ pt4.1: {'status': 10022, 'message': 'query result is empty'}
         </div>
         <pre>
         
-pt4.2: {'status': 10022, 'message': 'query result is empty'}
+pt4.2: {'status': 200, 'message': 'success', 'data': {'eid': 1, 'name': '红米Pro发布会', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2020-08-20T14:00:00'}}
 
 
         </pre>
@@ -710,7 +580,7 @@ pt4.2: {'status': 10022, 'message': 'query result is empty'}
 </tr>
 
 <tr id='pt4.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_event_list_eid_phone_success: 根据 eid 和phone 查询结果成功</div></td>
+    <td class='none'><div class='testcase'>test_get_event_list_nam_result_null: 关键字‘abc’查询</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -724,7 +594,7 @@ pt4.2: {'status': 10022, 'message': 'query result is empty'}
         </div>
         <pre>
         
-pt4.3: {'data': {'sign': False, 'phone': '13511001100', 'realname': 'alen', 'email': 'alen@mail.com'}, 'status': 200, 'message': 'success'}
+pt4.3: {'status': 10022, 'message': 'query result is empty'}
 
 
         </pre>
@@ -735,7 +605,7 @@ pt4.3: {'data': {'sign': False, 'phone': '13511001100', 'realname': 'alen', 'ema
 </tr>
 
 <tr id='pt4.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_event_list_eid_success: 根据 eid 查询结果成功</div></td>
+    <td class='none'><div class='testcase'>test_get_event_list_name_find: 关键字‘发布会’模糊查询</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -749,32 +619,8 @@ pt4.3: {'data': {'sign': False, 'phone': '13511001100', 'realname': 'alen', 'ema
         </div>
         <pre>
         
-pt4.4: {'data': [{'sign': False, 'phone': '13511001100', 'realname': 'alen', 'email': 'alen@mail.com'}, {'sign': True, 'phone': '13511001101', 'realname': 'has sign', 'email': 'sign@mail.com'}, {'sign': False, 'phone': '13511001199', 'realname': 'tom', 'email': ''}], 'status': 200, 'message': 'success'}
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr>
-
-<tr id='pt4.5' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_get_guest_list_eid_null: eid 参数为空</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.5')" >
-        pass</a>
-
-    <div id='div_pt4.5' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt4.5').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt4.5: {'status': 10021, 'message': 'eid cannot be empty'}
+pt4.4: {'status': 200, 'message': 'success', 'data': [{'eid': 1, 'name': '红米Pro发布会', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2020-08-20T14:00:00'}, {'eid': 4, 'name': '发布会已结束', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2001-08-20T14:00:00'}, {'eid': 5, 'name': '小米5发布会', 'limit': 2000, 'status': True, 'address': '北京国家会议中心', 'start_time': '2017-08-20T14:00:00'}, {'eid': 11, 'name': '一加4手机发布会', 'limit': 2000, 'status': True, 'address': '深圳宝体', 'start_time': '2017-05-10T12:00:00'}]}
+{'status': 200, 'message': 'success', 'data': [{'eid': 1, 'name': '红米Pro发布会', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2020-08-20T14:00:00'}, {'eid': 4, 'name': '发布会已结束', 'limit': 2000, 'status': True, 'address': '北京会展中心', 'start_time': '2001-08-20T14:00:00'}, {'eid': 5, 'name': '小米5发布会', 'limit': 2000, 'status': True, 'address': '北京国家会议中心', 'start_time': '2017-08-20T14:00:00'}, {'eid': 11, 'name': '一加4手机发布会', 'limit': 2000, 'status': True, 'address': '深圳宝体', 'start_time': '2017-05-10T12:00:00'}]}
 
 
         </pre>
@@ -785,16 +631,16 @@ pt4.5: {'status': 10021, 'message': 'eid cannot be empty'}
 </tr>
 
 <tr class='passClass'>
-    <td>user_sign_test.UserSignTest:  用户签到 </td>
-    <td>8</td>
-    <td>8</td>
+    <td>test_get_guest_list.GetGuestListTest:  获得嘉宾列表 </td>
+    <td>5</td>
+    <td>5</td>
     <td>0</td>
     <td>0</td>
-    <td><a href="javascript:showClassDetail('c5',8)">Detail</a></td>
+    <td><a href="javascript:showClassDetail('c5',5)">Detail</a></td>
 </tr>
 
 <tr id='pt5.1' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_user_sign_all_null: 参数为空</div></td>
+    <td class='none'><div class='testcase'>test_get_event_list_eid_error: 根据 eid 查询结果为空</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -808,7 +654,7 @@ pt4.5: {'status': 10021, 'message': 'eid cannot be empty'}
         </div>
         <pre>
         
-pt5.1: {'status': 10021, 'message': 'parameter error'}
+pt5.1: {'status': 10022, 'message': 'query result is empty'}
 
 
         </pre>
@@ -819,7 +665,7 @@ pt5.1: {'status': 10021, 'message': 'parameter error'}
 </tr>
 
 <tr id='pt5.2' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_user_sign_eid_error: eid=901 查询结果不存在</div></td>
+    <td class='none'><div class='testcase'>test_get_event_list_eid_phone_null: 根据 eid 和phone 查询结果为空</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -833,7 +679,7 @@ pt5.1: {'status': 10021, 'message': 'parameter error'}
         </div>
         <pre>
         
-pt5.2: {'status': 10022, 'message': 'event id null'}
+pt5.2: {'status': 10022, 'message': 'query result is empty'}
 
 
         </pre>
@@ -844,7 +690,7 @@ pt5.2: {'status': 10022, 'message': 'event id null'}
 </tr>
 
 <tr id='pt5.3' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_user_sign_eid_phone_error: eid=1, phone=13511001102 手机号与发布会不匹配</div></td>
+    <td class='none'><div class='testcase'>test_get_event_list_eid_phone_success: 根据 eid 和phone 查询结果成功</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -858,7 +704,7 @@ pt5.2: {'status': 10022, 'message': 'event id null'}
         </div>
         <pre>
         
-pt5.3: {'status': 10026, 'message': 'user did not participate in the conference'}
+pt5.3: {'status': 200, 'message': 'success', 'data': {'realname': 'alen', 'phone': '13511001100', 'email': 'alen@mail.com', 'sign': False}}
 
 
         </pre>
@@ -869,7 +715,7 @@ pt5.3: {'status': 10026, 'message': 'user did not participate in the conference'
 </tr>
 
 <tr id='pt5.4' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_user_sign_has_sign_in: 已签到</div></td>
+    <td class='none'><div class='testcase'>test_get_event_list_eid_success: 根据 eid 查询结果成功</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -883,7 +729,7 @@ pt5.3: {'status': 10026, 'message': 'user did not participate in the conference'
         </div>
         <pre>
         
-pt5.4: {'status': 10027, 'message': 'user has sign in'}
+pt5.4: {'status': 200, 'message': 'success', 'data': [{'realname': 'alen', 'phone': '13511001100', 'email': 'alen@mail.com', 'sign': False}, {'realname': 'has sign', 'phone': '13511001101', 'email': 'sign@mail.com', 'sign': True}]}
 
 
         </pre>
@@ -894,7 +740,7 @@ pt5.4: {'status': 10027, 'message': 'user has sign in'}
 </tr>
 
 <tr id='pt5.5' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_user_sign_phone_error: phone=10100001111 手机号不存在</div></td>
+    <td class='none'><div class='testcase'>test_get_guest_list_eid_null: eid 参数为空</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -908,7 +754,7 @@ pt5.4: {'status': 10027, 'message': 'user has sign in'}
         </div>
         <pre>
         
-pt5.5: {'status': 10025, 'message': 'user phone null'}
+pt5.5: {'status': 10021, 'message': 'eid cannot be empty'}
 
 
         </pre>
@@ -918,22 +764,200 @@ pt5.5: {'status': 10025, 'message': 'user phone null'}
     </td>
 </tr>
 
-<tr id='pt5.6' class='hiddenRow'>
+<tr class='passClass'>
+    <td>test_sign.AddEventTest</td>
+    <td>7</td>
+    <td>7</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c6',7)">Detail</a></td>
+</tr>
+
+<tr id='pt6.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_event_data_type_error: 日期格式错误</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt6.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_event_eid_exist: id已经存在</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt6.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_event_name_exist: 名称已经存在</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt6.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_event_sign_error: 签名错误</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt6.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_event_sign_null: 签名参数为空</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt6.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_event_success: 添加成功</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='pt6.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_add_event_time_out: 请求超时</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr class='passClass'>
+    <td>test_user_sign.UserSignTest:  用户签到 </td>
+    <td>8</td>
+    <td>8</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c7',8)">Detail</a></td>
+</tr>
+
+<tr id='pt7.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_user_sign_all_null: 参数为空</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.1')" >
+        pass</a>
+
+    <div id='div_pt7.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.1: {'status': 10021, 'message': 'parameter error'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_user_sign_eid_error: eid=901 查询结果不存在</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.2')" >
+        pass</a>
+
+    <div id='div_pt7.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.2: {'status': 10022, 'message': 'event id null'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_user_sign_eid_phone_error: eid=1, phone=13511001102 手机号与发布会不匹配</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.3')" >
+        pass</a>
+
+    <div id='div_pt7.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.3: {'status': 10026, 'message': 'user did not participate in the conference'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_user_sign_has_sign_in: 已签到</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.4')" >
+        pass</a>
+
+    <div id='div_pt7.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.4: {'status': 10027, 'message': 'user has sign in'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_user_sign_phone_error: phone=10100001111 手机号不存在</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.5')" >
+        pass</a>
+
+    <div id='div_pt7.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+pt7.5: {'status': 10025, 'message': 'user phone null'}
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.6' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_user_sign_status_close: eid=3 发布会状态关闭</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.6')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.6')" >
         pass</a>
 
-    <div id='div_pt5.6' class="popup_window">
+    <div id='div_pt7.6' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.6').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.6').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt5.6: {'status': 10023, 'message': 'event status is not available'}
+pt7.6: {'status': 10023, 'message': 'event status is not available'}
 
 
         </pre>
@@ -943,22 +967,22 @@ pt5.6: {'status': 10023, 'message': 'event status is not available'}
     </td>
 </tr>
 
-<tr id='pt5.7' class='hiddenRow'>
+<tr id='pt7.7' class='hiddenRow'>
     <td class='none'><div class='testcase'>test_user_sign_success: 签到成功</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.7')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.7')" >
         pass</a>
 
-    <div id='div_pt5.7' class="popup_window">
+    <div id='div_pt7.7' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.7').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.7').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt5.7: {'phone': '13511001100', 'realname': 'alen', 'status': 200, 'message': 'sign success'}
+pt7.7: {'status': 200, 'message': 'sign success'}
 
 
         </pre>
@@ -968,22 +992,22 @@ pt5.7: {'phone': '13511001100', 'realname': 'alen', 'status': 200, 'message': 's
     </td>
 </tr>
 
-<tr id='pt5.8' class='hiddenRow'>
-    <td class='none'><div class='testcase'>test_user_sign_time_start: eid=3 发布会已开始</div></td>
+<tr id='pt7.8' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_user_sign_time_start: eid=4 发布会已开始</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.8')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.8')" >
         pass</a>
 
-    <div id='div_pt5.8' class="popup_window">
+    <div id='div_pt7.8' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt5.8').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt7.8').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-pt5.8: {'status': 10024, 'message': 'event has started'}
+pt7.8: {'status': 10024, 'message': 'event has started'}
 
 
         </pre>
@@ -995,8 +1019,8 @@ pt5.8: {'status': 10024, 'message': 'event has started'}
 
 <tr id='total_row'>
     <td>Total</td>
-    <td>29</td>
-    <td class="text text-success">29</td>
+    <td>38</td>
+    <td class="text text-success">38</td>
     <td class="text text-danger">0</td>
     <td class="text text-warning">0</td>
     <td>&nbsp;</td>
