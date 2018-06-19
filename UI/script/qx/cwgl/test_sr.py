@@ -8,6 +8,7 @@ import unittest,sys,os
 sys.path.append("../../page_obj")
 from page_obj.qx_cwgl import cwgl
 from page_obj.pc_daoru import daoru
+from page_obj.page_zong import page
 
 class qxTest(unittest.TestCase):
 	'''权限-收入单测试'''
