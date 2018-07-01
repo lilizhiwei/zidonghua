@@ -14,5 +14,8 @@ class baidu(page):
 		self.driver.find_element_by_id("kw").send_keys(name)
 
 	#点击
+	def clickbd1(self):
+		self.driver.find_element_by_id("su1").click()
+
 	def clickbd(self):
 		self.driver.find_element_by_id("su").click()

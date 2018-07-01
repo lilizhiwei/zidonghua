@@ -6,8 +6,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
 from time import sleep
 import unittest
+import pdb
 
 '''
+断点：pdb.set_trace()
 self.assertRegexpMatches(self.driver.find_element_by_xpath("/html").text, r"[\s\S]*李志伟[\s\S]*") 
 同IDE的verifyTextPresent  *李志伟*
 
@@ -16,6 +18,26 @@ self.assertNotRegexpMatches(self.driver.find_element_by_xpath("/html").text, r"[
 
 WebDriverWait(self.driver,30,0.5).until(EC.text_to_be_present_in_element((By.XPATH,'/html'),"购物车空空如也"))
 同IDE的waitForTextPresent  *购物车空空如也*
+
+driver.find_element_by_xpath("//*[text()='业务员']")
+driver.find_element_by_xpath('//span[contains(text(), '京公网')]')文本包括京公网
+
+<div id="btn-attention_2030295">...</div> #根据节点属性值的部分进行定位
+driver.find_element_by_xpath("//div[contains(@id, 'btn-attention')]")     含有
+driver.find_element_by_xpath("//div[starts-with(@id, 'btn-attention')]")  开头
+driver.find_element_by_xpath("//div[ends-with(@id, 'btn-attention')]")  # 结尾是‘btn-attention’
+
+#两个相同元素，一个不可见
+driver.find_element_by_xpath("//span[contains(@id, 'sbw')] and not(contains[@style, 'display:none'])")
+
+#定位父节点 /../
+
+#windows
+driver.refresh() # 刷新
+driver.back() # 后退
+driver.forward() # 前进
+driver.maximize_window() # 最大化
+driver.set_window_size(100,200) # 设置窗口大小
 '''
 
 class page(object):
